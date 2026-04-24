@@ -11,7 +11,10 @@ pacman_packages=(
     ghostty nemo gvfs loupe celluloid gnome-text-editor evince obs-studio ffmpeg cava
 
     # Shell & Terminal Tools
-    tmux neovim fzf zoxide eza bat jq stow
+    zsh tmux neovim fzf zoxide eza bat jq stow ripgrep fd openssh man-db make curl wget unzip btop fastfetch cmatrix cowsay
+
+    # Programming Languages (for nvim LSP & formatters)
+    python3 python-pip nodejs npm go
 
     # Qt & Display Manager Support
     sddm qt5ct qt6ct qt5-wayland qt6-wayland
@@ -36,6 +39,9 @@ aur_packages=(
     # Hyprland & Wayland Environment
     wlogout
 
+    # Shell & Terminal
+    oh-my-posh-bin
+
     # Communication
     spotify zen-browser-bin
 
@@ -46,10 +52,10 @@ aur_packages=(
     ttf-segoe-ui-variable sddm-astronaut-theme apple_cursor whitesur-icon-theme tint
 
     # Fun
-    pokemon-colorscripts-git
+    pokemon-colorscripts-git pipes.sh cbonsai
 
     # Terminal tools
-    lazygit lazydocker
+    lazygit lazydocker-bin
 )
 
 sudo pacman -S --noconfirm --needed "${pacman_packages[@]}"
