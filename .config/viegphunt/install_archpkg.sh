@@ -8,7 +8,7 @@ pacman_packages=(
     brightnessctl network-manager-applet bluez bluez-utils blueman pipewire wireplumber pavucontrol playerctl
 
     # System Utilities and Media
-    ghostty nemo gvfs loupe celluloid gnome-text-editor evince obs-studio ffmpeg cava
+    ghostty firefox nemo gvfs loupe celluloid gnome-text-editor evince obs-studio ffmpeg cava
 
     # Shell & Terminal Tools
     zsh tmux neovim fzf zoxide eza bat jq stow ripgrep fd openssh man-db make curl wget unzip btop fastfetch cmatrix cowsay lazygit
@@ -20,7 +20,7 @@ pacman_packages=(
     sddm qt5ct qt6ct qt5-wayland qt6-wayland
 
     # Input Method
-    fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool fcitx5-bamboo
+    fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool fcitx5-chinese-addons
 
     # Fonts
     ttf-jetbrains-mono-nerd noto-fonts
@@ -49,7 +49,7 @@ aur_packages=(
     visual-studio-code-bin
 
     # Fonts & Theming
-    fonts-apple sddm-astronaut-theme apple_cursor whitesur-icon-theme tint
+    fonts-apple sddm-astronaut-theme apple_cursor whitesur-icon-theme tint fcitx5-skin-fluentdark-git
 
     # Fun
     pokemon-colorscripts-git pipes.sh cbonsai
