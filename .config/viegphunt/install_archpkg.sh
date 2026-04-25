@@ -11,7 +11,7 @@ pacman_packages=(
     ghostty nemo gvfs loupe celluloid gnome-text-editor evince obs-studio ffmpeg cava
 
     # Shell & Terminal Tools
-    zsh tmux neovim fzf zoxide eza bat jq stow ripgrep fd openssh man-db make curl wget unzip btop fastfetch cmatrix cowsay
+    zsh tmux neovim fzf zoxide eza bat jq stow ripgrep fd openssh man-db make curl wget unzip btop fastfetch cmatrix cowsay lazygit
 
     # Programming Languages (for nvim LSP & formatters)
     python python-pip nodejs npm go
@@ -55,7 +55,7 @@ aur_packages=(
     pokemon-colorscripts-git pipes.sh cbonsai
 
     # Terminal tools
-    lazygit lazydocker-bin
+    lazydocker-bin
 )
 
 sudo pacman -S --noconfirm --needed "${pacman_packages[@]}"
