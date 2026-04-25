@@ -49,7 +49,7 @@ aur_packages=(
     visual-studio-code-bin
 
     # Fonts & Theming
-    ttf-segoe-ui-variable sddm-astronaut-theme apple_cursor whitesur-icon-theme tint
+    fonts-apple sddm-astronaut-theme apple_cursor whitesur-icon-theme tint
 
     # Fun
     pokemon-colorscripts-git pipes.sh cbonsai

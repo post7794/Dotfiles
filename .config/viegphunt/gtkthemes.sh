@@ -4,7 +4,7 @@ SCHEME="prefer-dark"
 THEME="adw-gtk3-dark"
 ICONS="WhiteSur-dark"
 CURSOR="macOS"
-UI_FONT="Segoe UI Variable Static Text 12"
+UI_FONT="PingFang SC 12"
 MONO_FONT="JetBrainsMono Nerd Font 12"
 
 SCHEMA="gsettings set org.gnome.desktop.interface"
