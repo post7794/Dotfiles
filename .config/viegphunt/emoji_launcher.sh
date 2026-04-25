@@ -4,4 +4,4 @@ if pidof rofi > /dev/null; then
     pkill rofi
 fi
 
-rofi -show emoji
+~/.config/viegphunt/rofi.sh -show emoji

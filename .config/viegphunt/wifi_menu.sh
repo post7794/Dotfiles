@@ -19,7 +19,7 @@ done)
 
 [ -z "$networks" ] && notify-send "WiFi" "No networks found" && exit 1
 
-selected=$(echo "$networks" | rofi -dmenu -i -p "WiFi" -theme ~/.config/rofi/config.rasi | awk '{print $1}')
+selected=$(echo "$networks" | ~/.config/viegphunt/rofi.sh -dmenu -i -p "WiFi" -theme ~/.config/rofi/config.rasi | awk '{print $1}')
 
 [ -z "$selected" ] && exit 0
 

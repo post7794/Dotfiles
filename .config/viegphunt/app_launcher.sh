@@ -11,5 +11,5 @@ else
     if pidof rofi > /dev/null; then
         pkill rofi
     fi
-    rofi -show drun
+    ~/.config/viegphunt/rofi.sh -show drun
 fi

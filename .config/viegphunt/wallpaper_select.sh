@@ -8,7 +8,7 @@ wallpapers_dir="$HOME/Pictures/Wallpapers"
 
 selected_wallpaper=$(for a in "$wallpapers_dir"/*; do
     echo -en "$(basename "${a%.*}")\0icon\x1f$a\n"
-done | rofi -dmenu -p " ")
+done | ~/.config/viegphunt/rofi.sh -dmenu -p "")
 
 image_fullname_path=$(find "$wallpapers_dir" -type f -name "$selected_wallpaper.*" | head -n 1)
 
