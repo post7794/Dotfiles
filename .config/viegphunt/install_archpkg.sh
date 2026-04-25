@@ -14,7 +14,7 @@ pacman_packages=(
     zsh tmux neovim fzf zoxide eza bat jq stow ripgrep fd openssh man-db make curl wget unzip btop fastfetch cmatrix cowsay
 
     # Programming Languages (for nvim LSP & formatters)
-    python3 python-pip nodejs npm go
+    python python-pip nodejs npm go
 
     # Qt & Display Manager Support
     sddm qt5ct qt6ct qt5-wayland qt6-wayland
