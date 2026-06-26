@@ -15,6 +15,10 @@ return {
                 replace = "cs",
                 find = "ysf",
                 find_left = "ysF",
+                highlight = "",
+                update_n_lines = "",
+                suffix_last = "",
+                suffix_next = "",
             },
         })
         -- Move lines/selection (normal & visual: Alt+hjkl)
@@ -29,14 +33,6 @@ return {
                 animation = function() return 0 end,
             },
             symbol = "▏",
-        })
-
-        -- Jump to any visible position
-        local jump2d = require("mini.jump2d")
-        jump2d.setup({
-            mappings = {
-                start_jumping = "s",
-            },
         })
 
         -- Comment code
