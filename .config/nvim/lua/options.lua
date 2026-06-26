@@ -8,11 +8,12 @@ opt.undofile = true
 
 -- Line numbers
 opt.number = true                   -- Display line numbers
+opt.relativenumber = true            -- Display relative line numbers
 opt.numberwidth = 2                 -- Set min number column width
 
 -- Display and UI
 opt.cursorline = true               -- Highlight cursor line
-opt.fillchars = { eob = " " }       -- Hide '~' on empty buffer lines
+opt.fillchars = { eob = " " }       -- Hide "~" on empty buffer lines
 opt.wrap = false                    -- Disable wrap line
 opt.sidescroll = 1                  -- Scroll 1-char horizontally
 opt.sidescrolloff = 5               -- Keep 5-char margin
@@ -34,5 +35,17 @@ opt.shiftwidth = 4
 -- Set color
 opt.termguicolors = true
 
--- Sync clipboard between OS and Neovim.
+-- Clipboard: OSC 52 for copy (instant), win32yank for paste (WT doesn't support OSC 52 read)
+vim.g.clipboard = {
+    name = "OSC 52 + win32yank",
+    copy = {
+        ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+        ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+    },
+    paste = {
+        ["+"] = "win32yank.exe -o --lf",
+        ["*"] = "win32yank.exe -o --lf",
+    },
+    cache_enabled = true,
+}
 opt.clipboard = "unnamedplus"
