@@ -21,5 +21,8 @@ return {
 			long_message_to_split = true,
 			inc_rename = true,
 		},
+		routes = {
+			{ filter = { event = "msg_showmode" }, opts = { skip = true } },
+		},
 	},
 }
